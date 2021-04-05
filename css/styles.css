@@ -32,6 +32,9 @@ color: var(--primary-text-color);
 .site-nav .link:focus {
   color: var(--accent-text-color);
 }
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
 /* contacts-nav */
 .contacts-nav .item {
   color: #757575;
