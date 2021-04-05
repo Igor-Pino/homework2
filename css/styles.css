@@ -1,0 +1,54 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196f3;
+}
+
+
+
+
+body {
+background-color: #E5E5E5;
+color: var(--primary-text-color);
+}
+/* logo style */
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;  
+}
+.logo-part {
+  color: #2196F3;  
+}
+/* site-nav */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+/* contacts-nav */
+.contacts-nav .item {
+  color: #757575;
+}
+.contacts-nav .item:hover,
+.contacts-nav .item:focus {
+  color: var(--accent-text-color);
+}
+/* main */
+.section-title {
+  color: var(--title-text-color);
+}
+/* features */
+.features .title {
+  color: var(--title-text-color);
+}
+/* our team */
+.team .mamber {
+    color: var(--title-text-color);
+}
