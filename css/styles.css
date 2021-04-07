@@ -1,18 +1,21 @@
 :root {
+    --main-background-color: #E5E5E5;
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-text-color: #2196f3;
     --main-logo-color: #000000;
+    --footer-address-color: #FFFFFF;
+    --footer-contacts-color: rgba(255,255,255,0,6);
     }
 body {
-  background-color: #E5E5E5;
+  background-color: var(--main-background-color); 
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
   letter-spacing: 0.03em;
 }
-li {
-  list-style-type: none;
+.list {
+  list-style: none;
 }
 /* section titles */
 .section-title {
@@ -46,8 +49,13 @@ li {
   .logo-part {
   color: #2196F3;  
   }
+  footer .logo {
+    color: #FFFFFF;
+  }
+  
 /* site-nav */
 .site-nav .link {
+  text-decoration: none;
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -62,6 +70,7 @@ li {
   }
 /* contacts-nav */
 .contacts-nav .item {
+  text-decoration: none;
   color: var(--primary-text-color)
   font-size: 14px;
   line-height: 1.14;
@@ -76,6 +85,9 @@ li {
   color: var(--title-text-color);
 }
 /* Hero section */
+.hero {
+  background-color: #2F303A;
+}
 .hero-title {
   text-transform: uppercase;
   font-weight: 900;
@@ -83,6 +95,7 @@ li {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  color: #FFFFFF
 }
 .hero button {
   font-weight: 700;
@@ -105,6 +118,61 @@ line-height: 1.71x;
 color: var(--primary-text-color);
 }
 /* our team */
-.team .mamber {
-    color: var(--title-text-color);
+.team {
+background-color: #F5F4FA;
 }
+.team-mamber {
+font-size: 16px;
+line-height: 1.9;
+color: var(--title-text-color);
+}
+/* footer */
+footer {
+background-color: #2F303A;
+}
+
+.address {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: var(--footer-address-color);
+}
+.contact .link {
+text-decoration: none;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: var(--footer-contacts-color);
+}
+
+
+
+
+
+/* PORTFOLIO */
+/* filter */
+.filter-item {
+  font-size: 16px;
+  line-height: 1.63;
+  color: var(--title-text-color);
+  }
+  .filter-item:hover,
+  .filter-item:focus {
+  color: var(--accent-text-color);
+  }
+ /*examples */
+ .example {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+ }
+ .examples p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--primary-text-color);
+ }
